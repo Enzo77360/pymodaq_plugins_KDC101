@@ -1,7 +1,5 @@
-pymodaq_plugins_template
+pymodaq_plugins_KDC_101
 ########################
-
-.. the following must be adapted to your developed package, links to pypi, github  description...
 
 .. image:: https://img.shields.io/pypi/v/pymodaq_plugins_template.svg
    :target: https://pypi.org/project/pymodaq_plugins_template/
@@ -16,73 +14,33 @@ pymodaq_plugins_template
    :alt: Publication Status
 
 .. image:: https://github.com/PyMoDAQ/pymodaq_plugins_template/actions/workflows/Test.yml/badge.svg
-    :target: https://github.com/PyMoDAQ/pymodaq_plugins_template/actions/workflows/Test.yml
+   :target: https://github.com/PyMoDAQ/pymodaq_plugins_template/actions/workflows/Test.yml
 
+Description
+===========
 
-Use this template to create a repository on your account and start the development of your own PyMoDAQ plugin!
-
+This project integrates a Thorlabs KDC101 motor into the PyMoDAQ module based on the `pymodaq_plugins_template <https://github.com/PyMoDAQ/pymodaq_plugins_template>`_ template. To use this plugin, ensure you are using the latest version of PyMoDAQ, and have Windows 10 as the operating system. Install the Thorlabs Kinesis drivers available on Thorlabs' website for proper functionality. For usage, clone the PyMoDAQ repository using `git clone https://github.com/PyMoDAQ/PyMoDAQ.git` and install the plugin via `pip install pymodaq-plugins-KDC101`. To create and publish on PyPI, ensure you have the `setup.py`, `README.rst`, and other necessary files at the root of your project. Create a source and binary distribution with `python setup.py sdist bdist_wheel`, install `twine` with `pip install twine`, and upload distributions to PyPI using `twine upload dist/*`.
 
 Authors
 =======
 
-* First Author  (myemail@xxx.org)
-* Other author (myotheremail@xxx.org)
-
-.. if needed use this field
-
-    Contributors
-    ============
-
-    * First Contributor
-    * Other Contributors
-
-.. if needed use this field
-
-  Depending on the plugin type, delete/complete the fields below
-
+* Enzo Sebiane (enzo.sebiane@orange.fr)
 
 Instruments
 ===========
 
-Below is the list of instruments included in this plugin
+**KDC101**: Control of the Thorlabs KDC101 motor.
 
 Actuators
 +++++++++
 
-* **yyy**: control of yyy actuators
-* **xxx**: control of xxx actuators
+* **KDC101**
 
 Viewer0D
 ++++++++
 
-* **yyy**: control of yyy 0D detector
-* **xxx**: control of xxx 0D detector
-
 Viewer1D
 ++++++++
 
-* **yyy**: control of yyy 1D detector
-* **xxx**: control of xxx 1D detector
-
-
 Viewer2D
 ++++++++
-
-* **yyy**: control of yyy 2D detector
-* **xxx**: control of xxx 2D detector
-
-
-PID Models
-==========
-
-
-Extensions
-==========
-
-
-Installation instructions
-=========================
-
-* PyMoDAQ’s version.
-* Operating system’s version.
-* What manufacturer’s drivers should be installed to make this plugin run?
