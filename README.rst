@@ -1,88 +1,73 @@
-pymodaq_plugins_template
-########################
-
-.. the following must be adapted to your developed package, links to pypi, github  description...
-
-.. image:: https://img.shields.io/pypi/v/pymodaq_plugins_template.svg
-   :target: https://pypi.org/project/pymodaq_plugins_template/
-   :alt: Latest Version
-
-.. image:: https://readthedocs.org/projects/pymodaq/badge/?version=latest
-   :target: https://pymodaq.readthedocs.io/en/stable/?badge=latest
-   :alt: Documentation Status
-
-.. image:: https://github.com/PyMoDAQ/pymodaq_plugins_template/workflows/Upload%20Python%20Package/badge.svg
-   :target: https://github.com/PyMoDAQ/pymodaq_plugins_template
-   :alt: Publication Status
-
-.. image:: https://github.com/PyMoDAQ/pymodaq_plugins_template/actions/workflows/Test.yml/badge.svg
-    :target: https://github.com/PyMoDAQ/pymodaq_plugins_template/actions/workflows/Test.yml
+# pymodaq_plugins_KDC101
 
 
-Use this template to create a repository on your account and start the development of your own PyMoDAQ plugin!
+## Description
 
+Ce projet permet d'intégrer un moteur Thorlabs KDC101 au module PyMoDAQ à partir du template [pymodaq_plugins_template](https://github.com/PyMoDAQ/pymodaq_plugins_template). Il est important de suivre et renommer le projet comme expliqué sur [le tutoriel PyMoDAQ](http://pymodaq.cnrs.fr/en/latest/tutorials/new_plugin.html). Ce projet utilise les librairies DLL du wrapper disponible sur le site de Thorlabs.
 
-Authors
-=======
+## Authors
 
-* First Author  (myemail@xxx.org)
-* Other author (myotheremail@xxx.org)
+* Enzo Sebiane (enzo.sebiane@orange.fr)
 
-.. if needed use this field
+## Instruments
 
-    Contributors
-    ============
+### Actuators
 
-    * First Contributor
-    * Other Contributors
+* **KDC101**: contrôle du moteur Thorlabs KDC101
 
-.. if needed use this field
+## Installation Instructions
 
-  Depending on the plugin type, delete/complete the fields below
+1. **Version de PyMoDAQ**: Assurez-vous d'utiliser la dernière version de PyMoDAQ.
+2. **Système d'exploitation**: Ce plugin a été testé sur Windows 10.
+3. **Drivers du fabricant**: Installez les drivers Thorlabs Kinesis disponibles sur le site de Thorlabs pour que ce plugin fonctionne correctement.
 
+## Utilisation
 
-Instruments
-===========
+Pour utiliser ce plugin, suivez les étapes ci-dessous :
 
-Below is the list of instruments included in this plugin
+1. Clonez le dépôt PyMoDAQ :
 
-Actuators
-+++++++++
+    ```bash
+    git clone https://github.com/PyMoDAQ/PyMoDAQ.git
+    ```
 
-* **yyy**: control of yyy actuators
-* **xxx**: control of xxx actuators
+2. Installez le plugin via pip :
 
-Viewer0D
-++++++++
+    ```bash
+    pip install pymodaq-plugins-KDC101
+    ```
 
-* **yyy**: control of yyy 0D detector
-* **xxx**: control of xxx 0D detector
+Utilisez ce template pour créer un dépôt sur votre compte et commencez le développement de votre propre plugin PyMoDAQ !
 
-Viewer1D
-++++++++
+## Instructions pour renommer le projet
 
-* **yyy**: control of yyy 1D detector
-* **xxx**: control of xxx 1D detector
+Suivez les instructions détaillées dans le tutoriel [PyMoDAQ](http://pymodaq.cnrs.fr/en/latest/tutorials/new_plugin.html) pour renommer correctement le projet et ajuster les configurations nécessaires.
 
+## Création et Publication sur PyPI
 
-Viewer2D
-++++++++
+Pour créer et publier votre librairie sur PyPI, suivez ces étapes :
 
-* **yyy**: control of yyy 2D detector
-* **xxx**: control of xxx 2D detector
+1. Assurez-vous d'avoir les fichiers `setup.py`, `README.md`, et autres fichiers nécessaires à la racine de votre projet.
+2. Créez une distribution source et une distribution binaire de votre package :
 
+    ```bash
+    python setup.py sdist bdist_wheel
+    ```
 
-PID Models
-==========
+3. Installez `twine` si ce n'est pas déjà fait :
 
+    ```bash
+    pip install twine
+    ```
 
-Extensions
-==========
+4. Téléchargez les distributions sur PyPI en utilisant `twine` :
 
+    ```bash
+    twine upload dist/*
+    ```
 
-Installation instructions
-=========================
+    Vous serez invité à entrer vos informations d'identification PyPI (nom d'utilisateur et mot de passe).
 
-* PyMoDAQ’s version.
-* Operating system’s version.
-* What manufacturer’s drivers should be installed to make this plugin run?
+## Contributeurs
+
+* Enzo Sebiane
