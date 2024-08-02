@@ -77,7 +77,7 @@ class Kinesis:
         position = Decimal(position)
         self._device.MoveTo(position, Int32(60000))
         time.sleep(2)  # Attends un peu pour voir si le mouvement se termine
-        current_position = Decimal.ToDouble(self._device.GetPosition())
+        current_position = Decimal.ToDouble(self._device.Position)
         print(f"Position after move: {current_position}")
 
     def move_rel(self, position: float):
@@ -91,7 +91,7 @@ class Kinesis:
 
     def get_position(self):
         if self._device:
-            position = Decimal.ToDouble(self._device.GetPosition())
+            position = Decimal.ToDouble(self._device.Position)
             print(f"Current position: {position}")
             return position
         return None
