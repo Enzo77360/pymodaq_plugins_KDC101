@@ -1,7 +1,7 @@
 pymodaq_plugins_KDC_101
 ########################
 
-
+https://pypi.org/project/pymodaq-plugins-KDC101/
 
 Description
 ===========
