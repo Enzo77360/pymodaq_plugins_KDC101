@@ -11,9 +11,6 @@ This project integrates a Thorlabs KDC101 motor into the PyMoDAQ module based on
 Installation
 ------------
 
-1. **Téléchargement des logiciels nécessaires** :
-
-   - Rendez-vous sur `la page de téléchargement Thorlabs <https://www.thorlabs.com/software_pages/viewsoftwarepage.cfm?code=Motion_Control>`_ et téléchargez le logiciel Kinesis : **Kinesis 64-Bit Software pour Windows 64-Bit**.
 
 2. **Installation du plugin** :
 
